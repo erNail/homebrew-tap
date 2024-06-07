@@ -11,7 +11,7 @@ class Labdoc < Formula
   on_macos do
     on_intel do
       url "https://github.com/erNail/labdoc/releases/download/1.0.0-rc-feature-implement-labdoc.1/labdoc_1.0.0-rc-feature-implement-labdoc.1_darwin_amd64.tar.gz"
-      sha256 "06f32451eadba66bf02810ef3cc18e6d920bd10f5daf7da94cc6dcb1f69e231d"
+      sha256 "45ae6803de7027e34a86866ac74a1c8be07bd9cd7819cfe8ae5e81f2f05195eb"
 
       def install
         bin.install "labdoc"
@@ -19,7 +19,7 @@ class Labdoc < Formula
     end
     on_arm do
       url "https://github.com/erNail/labdoc/releases/download/1.0.0-rc-feature-implement-labdoc.1/labdoc_1.0.0-rc-feature-implement-labdoc.1_darwin_arm64.tar.gz"
-      sha256 "ba1dd3c739e34b71778df397fbeeb3606164a764a97c897747dde7b4d3b9565f"
+      sha256 "a39dc6a238f711f93ecc984ff6d14abcbc2d351ecddb84fb5a933cfa4553beaa"
 
       def install
         bin.install "labdoc"
@@ -31,7 +31,7 @@ class Labdoc < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/erNail/labdoc/releases/download/1.0.0-rc-feature-implement-labdoc.1/labdoc_1.0.0-rc-feature-implement-labdoc.1_linux_amd64.tar.gz"
-        sha256 "52fdafa208581c3a804e81906d8b12cb5fc7d5e654e67b34a082ec43d33fa608"
+        sha256 "5de119ffbd12d472cd62090735935da6e954da715cea368401f78862a7152d44"
 
         def install
           bin.install "labdoc"
@@ -41,7 +41,7 @@ class Labdoc < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/erNail/labdoc/releases/download/1.0.0-rc-feature-implement-labdoc.1/labdoc_1.0.0-rc-feature-implement-labdoc.1_linux_arm64.tar.gz"
-        sha256 "679f9f514951cbbd081a094b8b25fdf35f3ecfca4262a58fed88eb41d435f0b7"
+        sha256 "15b044770ca3db0eadfdbcb19697e46339303e787e7938dafa6d9b97203ecb5f"
 
         def install
           bin.install "labdoc"
