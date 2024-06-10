@@ -5,21 +5,21 @@
 class Labdoc < Formula
   desc "Automatically generate documentation for GitLab CI/CD components and CI/CD pipelines."
   homepage "https://github.com/erNail/labdoc"
-  version "1.0.2-rc-feature-fix-anchor-link-rendering.1"
+  version "1.0.2"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/erNail/labdoc/releases/download/1.0.2-rc-feature-fix-anchor-link-rendering.1/labdoc_1.0.2-rc-feature-fix-anchor-link-rendering.1_darwin_amd64.tar.gz"
-      sha256 "7ad5fdfd5ed12f76c518cdc8432a652ba462b3fddcaae0652a1b0a4b60eb750a"
+      url "https://github.com/erNail/labdoc/releases/download/1.0.2/labdoc_1.0.2_darwin_amd64.tar.gz"
+      sha256 "ed58912b16c794bff199f28a2b1bb87a556f6516b9d16cb3bc65e15cd0498eb5"
 
       def install
         bin.install "labdoc"
       end
     end
     on_arm do
-      url "https://github.com/erNail/labdoc/releases/download/1.0.2-rc-feature-fix-anchor-link-rendering.1/labdoc_1.0.2-rc-feature-fix-anchor-link-rendering.1_darwin_arm64.tar.gz"
-      sha256 "5c29ab4602f300bb3643643dd4611f3477a83f227542c0e4c7c368d781ad6b4c"
+      url "https://github.com/erNail/labdoc/releases/download/1.0.2/labdoc_1.0.2_darwin_arm64.tar.gz"
+      sha256 "a966385081f3783cf850036618e34e06ef7b536a0c2f4ff49a1a1ca63cac79aa"
 
       def install
         bin.install "labdoc"
@@ -30,8 +30,8 @@ class Labdoc < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/erNail/labdoc/releases/download/1.0.2-rc-feature-fix-anchor-link-rendering.1/labdoc_1.0.2-rc-feature-fix-anchor-link-rendering.1_linux_amd64.tar.gz"
-        sha256 "2c4b7b435a89da1e33697077c5f2fcd54a3e3f7652a5d52a06e44e749bbab425"
+        url "https://github.com/erNail/labdoc/releases/download/1.0.2/labdoc_1.0.2_linux_amd64.tar.gz"
+        sha256 "b892304cad7223fadc65d45094cf95a8cf5401d7a97a5990cf0af09f53d9049f"
 
         def install
           bin.install "labdoc"
@@ -40,8 +40,8 @@ class Labdoc < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/erNail/labdoc/releases/download/1.0.2-rc-feature-fix-anchor-link-rendering.1/labdoc_1.0.2-rc-feature-fix-anchor-link-rendering.1_linux_arm64.tar.gz"
-        sha256 "facee97f4acd1631593a4a08b95980c941f2edd13d080162b34e5faff74f3729"
+        url "https://github.com/erNail/labdoc/releases/download/1.0.2/labdoc_1.0.2_linux_arm64.tar.gz"
+        sha256 "2afa1bc5c5a587318f42a280bada1c90f8e0eb4c0346fa666d9219b662697a3b"
 
         def install
           bin.install "labdoc"
