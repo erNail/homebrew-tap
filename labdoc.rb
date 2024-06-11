@@ -5,21 +5,21 @@
 class Labdoc < Formula
   desc "Automatically generate documentation for GitLab CI/CD components and CI/CD pipelines."
   homepage "https://github.com/erNail/labdoc"
-  version "1.0.2"
+  version "1.0.3-rc-feature-fix-undeterministic-components-order.1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/erNail/labdoc/releases/download/1.0.2/labdoc_1.0.2_darwin_amd64.tar.gz"
-      sha256 "ed58912b16c794bff199f28a2b1bb87a556f6516b9d16cb3bc65e15cd0498eb5"
+      url "https://github.com/erNail/labdoc/releases/download/1.0.3-rc-feature-fix-undeterministic-components-order.1/labdoc_1.0.3-rc-feature-fix-undeterministic-components-order.1_darwin_amd64.tar.gz"
+      sha256 "ca2d5263aa9e46c006ee46873e2f3ae432dcdfe696198baa4df1a1496e06b486"
 
       def install
         bin.install "labdoc"
       end
     end
     on_arm do
-      url "https://github.com/erNail/labdoc/releases/download/1.0.2/labdoc_1.0.2_darwin_arm64.tar.gz"
-      sha256 "a966385081f3783cf850036618e34e06ef7b536a0c2f4ff49a1a1ca63cac79aa"
+      url "https://github.com/erNail/labdoc/releases/download/1.0.3-rc-feature-fix-undeterministic-components-order.1/labdoc_1.0.3-rc-feature-fix-undeterministic-components-order.1_darwin_arm64.tar.gz"
+      sha256 "ba15c6b469511d1cb6cea5b6c62d274212f889f74e0af2e5361e9aae1d849edc"
 
       def install
         bin.install "labdoc"
@@ -30,8 +30,8 @@ class Labdoc < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/erNail/labdoc/releases/download/1.0.2/labdoc_1.0.2_linux_amd64.tar.gz"
-        sha256 "b892304cad7223fadc65d45094cf95a8cf5401d7a97a5990cf0af09f53d9049f"
+        url "https://github.com/erNail/labdoc/releases/download/1.0.3-rc-feature-fix-undeterministic-components-order.1/labdoc_1.0.3-rc-feature-fix-undeterministic-components-order.1_linux_amd64.tar.gz"
+        sha256 "666ba50951d3540958ddfad75c09be30053c65bacdaeb7c5e3e6d38a2e54deb6"
 
         def install
           bin.install "labdoc"
@@ -40,8 +40,8 @@ class Labdoc < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/erNail/labdoc/releases/download/1.0.2/labdoc_1.0.2_linux_arm64.tar.gz"
-        sha256 "2afa1bc5c5a587318f42a280bada1c90f8e0eb4c0346fa666d9219b662697a3b"
+        url "https://github.com/erNail/labdoc/releases/download/1.0.3-rc-feature-fix-undeterministic-components-order.1/labdoc_1.0.3-rc-feature-fix-undeterministic-components-order.1_linux_arm64.tar.gz"
+        sha256 "bf43ff297cd9ec3eae0a61ac0c7da341c99423e28ca91cb7d0e55e5b74ad2b61"
 
         def install
           bin.install "labdoc"
