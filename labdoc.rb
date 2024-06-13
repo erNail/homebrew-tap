@@ -5,21 +5,21 @@
 class Labdoc < Formula
   desc "Automatically generate documentation for GitLab CI/CD components and CI/CD pipelines."
   homepage "https://github.com/erNail/labdoc"
-  version "1.1.0-rc-feature-improve-documentation-rendering.1"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/erNail/labdoc/releases/download/1.1.0-rc-feature-improve-documentation-rendering.1/labdoc_1.1.0-rc-feature-improve-documentation-rendering.1_darwin_amd64.tar.gz"
-      sha256 "2e54c336910c9d6aa8a4979150a2347c73d406df1c7986ba85161b9aa6c25fd7"
+      url "https://github.com/erNail/labdoc/releases/download/1.1.0/labdoc_1.1.0_darwin_amd64.tar.gz"
+      sha256 "6beaf68ed54d231d08815d2a87add267491c4a3c401fa95dc4a1d4f5afa72084"
 
       def install
         bin.install "labdoc"
       end
     end
     on_arm do
-      url "https://github.com/erNail/labdoc/releases/download/1.1.0-rc-feature-improve-documentation-rendering.1/labdoc_1.1.0-rc-feature-improve-documentation-rendering.1_darwin_arm64.tar.gz"
-      sha256 "6f574b043b07bbc918be3f658ed62b56253364928902b169fbcbd622f8bc4145"
+      url "https://github.com/erNail/labdoc/releases/download/1.1.0/labdoc_1.1.0_darwin_arm64.tar.gz"
+      sha256 "d29f93806e203bb63ec93d1d9f02d3a2a4837a12ceb91029237b7de150926cc4"
 
       def install
         bin.install "labdoc"
@@ -30,8 +30,8 @@ class Labdoc < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/erNail/labdoc/releases/download/1.1.0-rc-feature-improve-documentation-rendering.1/labdoc_1.1.0-rc-feature-improve-documentation-rendering.1_linux_amd64.tar.gz"
-        sha256 "444bb1682c46d2379ec24768dd030b832b98bc4ebc035c181a0cb10a03e5666e"
+        url "https://github.com/erNail/labdoc/releases/download/1.1.0/labdoc_1.1.0_linux_amd64.tar.gz"
+        sha256 "2a321f570f5afb5d14d40a948267614a6278ebf8d1ef6e1bbdd855bf8dd6aa2b"
 
         def install
           bin.install "labdoc"
@@ -40,8 +40,8 @@ class Labdoc < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/erNail/labdoc/releases/download/1.1.0-rc-feature-improve-documentation-rendering.1/labdoc_1.1.0-rc-feature-improve-documentation-rendering.1_linux_arm64.tar.gz"
-        sha256 "52add50ed32f0b504f1f8900321404220da9f771d903676e18b9babb9c32a9b6"
+        url "https://github.com/erNail/labdoc/releases/download/1.1.0/labdoc_1.1.0_linux_arm64.tar.gz"
+        sha256 "db8f8f5311b4afb840848cbec2846e9a0a968b0dee2e7569518b9117d59c1af1"
 
         def install
           bin.install "labdoc"
