@@ -5,21 +5,21 @@
 class Labdoc < Formula
   desc "Automatically generate documentation for GitLab CI/CD components and CI/CD pipelines."
   homepage "https://github.com/erNail/labdoc"
-  version "1.0.3"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/erNail/labdoc/releases/download/1.0.3/labdoc_1.0.3_darwin_amd64.tar.gz"
-      sha256 "2a94ef97bb02699c4d35adec82f17c7fcbc6e683e814bfcb7a9c2d07e739be3d"
+      url "https://github.com/erNail/labdoc/releases/download/1.1.0/labdoc_1.1.0_darwin_amd64.tar.gz"
+      sha256 "6beaf68ed54d231d08815d2a87add267491c4a3c401fa95dc4a1d4f5afa72084"
 
       def install
         bin.install "labdoc"
       end
     end
     on_arm do
-      url "https://github.com/erNail/labdoc/releases/download/1.0.3/labdoc_1.0.3_darwin_arm64.tar.gz"
-      sha256 "804a78e75dafad89f239ab17ccf3572f26a4993d0ae989436e40b1fea6df336d"
+      url "https://github.com/erNail/labdoc/releases/download/1.1.0/labdoc_1.1.0_darwin_arm64.tar.gz"
+      sha256 "d29f93806e203bb63ec93d1d9f02d3a2a4837a12ceb91029237b7de150926cc4"
 
       def install
         bin.install "labdoc"
@@ -30,8 +30,8 @@ class Labdoc < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/erNail/labdoc/releases/download/1.0.3/labdoc_1.0.3_linux_amd64.tar.gz"
-        sha256 "88a4023d3e43b10dbce45bd03391a4865d6dafda5af2b12a98a90903e05009b9"
+        url "https://github.com/erNail/labdoc/releases/download/1.1.0/labdoc_1.1.0_linux_amd64.tar.gz"
+        sha256 "2a321f570f5afb5d14d40a948267614a6278ebf8d1ef6e1bbdd855bf8dd6aa2b"
 
         def install
           bin.install "labdoc"
@@ -40,8 +40,8 @@ class Labdoc < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/erNail/labdoc/releases/download/1.0.3/labdoc_1.0.3_linux_arm64.tar.gz"
-        sha256 "00af4dd0b2f70916d893b99c4f3480a835b5c10972e5129b407da0683711191b"
+        url "https://github.com/erNail/labdoc/releases/download/1.1.0/labdoc_1.1.0_linux_arm64.tar.gz"
+        sha256 "db8f8f5311b4afb840848cbec2846e9a0a968b0dee2e7569518b9117d59c1af1"
 
         def install
           bin.install "labdoc"
