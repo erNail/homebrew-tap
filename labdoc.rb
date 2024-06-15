@@ -5,21 +5,21 @@
 class Labdoc < Formula
   desc "Automatically generate documentation for GitLab CI/CD components and CI/CD pipelines."
   homepage "https://github.com/erNail/labdoc"
-  version "1.2.0-rc-feature-add-version-flag.1"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/erNail/labdoc/releases/download/1.2.0-rc-feature-add-version-flag.1/labdoc_1.2.0-rc-feature-add-version-flag.1_darwin_amd64.tar.gz"
-      sha256 "70d789952daa6e83b5ec853a538f53ac632a1c6876f7a69f0910a189ebe2b5d9"
+      url "https://github.com/erNail/labdoc/releases/download/1.2.0/labdoc_1.2.0_darwin_amd64.tar.gz"
+      sha256 "afff8ddf8cad9a4b7c5bd981d747be8cfdb0a3368265cd9ce24b98bf2457b775"
 
       def install
         bin.install "labdoc"
       end
     end
     on_arm do
-      url "https://github.com/erNail/labdoc/releases/download/1.2.0-rc-feature-add-version-flag.1/labdoc_1.2.0-rc-feature-add-version-flag.1_darwin_arm64.tar.gz"
-      sha256 "e477e853de02e153559f752a8f3a324bb141e611718182016a1dd614812e2d50"
+      url "https://github.com/erNail/labdoc/releases/download/1.2.0/labdoc_1.2.0_darwin_arm64.tar.gz"
+      sha256 "8c37f0996ea6aec6c570260a6cec3d18e12682526a48c8135c0b172e67d12069"
 
       def install
         bin.install "labdoc"
@@ -30,8 +30,8 @@ class Labdoc < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/erNail/labdoc/releases/download/1.2.0-rc-feature-add-version-flag.1/labdoc_1.2.0-rc-feature-add-version-flag.1_linux_amd64.tar.gz"
-        sha256 "9654661903540cc879d316701da8e32226967b87e07d06bc9ff8c69abe8b2cc5"
+        url "https://github.com/erNail/labdoc/releases/download/1.2.0/labdoc_1.2.0_linux_amd64.tar.gz"
+        sha256 "c0be7ee7249c0c516f061058c1576ee3127e31fc1b7ec4c71f832842589abec9"
 
         def install
           bin.install "labdoc"
@@ -40,8 +40,8 @@ class Labdoc < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/erNail/labdoc/releases/download/1.2.0-rc-feature-add-version-flag.1/labdoc_1.2.0-rc-feature-add-version-flag.1_linux_arm64.tar.gz"
-        sha256 "28cbced3e78892a66b833318842f21e992171e724d4c1d9f9a1cc26e53ae6c37"
+        url "https://github.com/erNail/labdoc/releases/download/1.2.0/labdoc_1.2.0_linux_arm64.tar.gz"
+        sha256 "bb4350907e7c6ec9c74528b30e57933a12492875cab11bac356c1de2a06c2100"
 
         def install
           bin.install "labdoc"
