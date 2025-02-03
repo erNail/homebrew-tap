@@ -7,6 +7,7 @@ class Verscout < Formula
 "
   homepage "https://github.com/erNail/verscout"
   version "1.1.0"
+
   license "MIT"
 
   on_macos do
