@@ -12,7 +12,7 @@ class Verscout < Formula
   on_macos do
     on_intel do
       url "https://github.com/erNail/verscout/releases/download/1.4.0-rc/verscout_1.4.0-rc_darwin_amd64.tar.gz"
-      sha256 "f669295608f40d7dfa329b08e3f08fc55ac2efad01e01f66a7b191034e2f83d3"
+      sha256 "4bc12ade5a02d6111adb360921b31a2a48dcb3bc2877245880106762dd4805c0"
 
       def install
         bin.install "verscout"
@@ -20,7 +20,7 @@ class Verscout < Formula
     end
     on_arm do
       url "https://github.com/erNail/verscout/releases/download/1.4.0-rc/verscout_1.4.0-rc_darwin_arm64.tar.gz"
-      sha256 "ac95733a29be11b7bfe8ea37600c095e42edb4023724dfd33f7f30bc72460d7e"
+      sha256 "dda122b7637d4e24fa609323da6834e1856257b98cc79a5894f9ae4c45badcf8"
 
       def install
         bin.install "verscout"
@@ -32,7 +32,7 @@ class Verscout < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/erNail/verscout/releases/download/1.4.0-rc/verscout_1.4.0-rc_linux_amd64.tar.gz"
-        sha256 "230167134ac900d151646ca60574bf21f08522c3ffc030670d660c897bf0e7bc"
+        sha256 "3da62e14e3ce9b036c09780abc964fdeb115dc1e5a80c63c82ff0f034caccc19"
 
         def install
           bin.install "verscout"
@@ -42,7 +42,7 @@ class Verscout < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/erNail/verscout/releases/download/1.4.0-rc/verscout_1.4.0-rc_linux_arm64.tar.gz"
-        sha256 "f2f78140f5b34cd540338c75023a6256e7647157042dc919ae951186668572e3"
+        sha256 "5c3fd6804bf8d0f62305cdfbf0f116704a67e1b6073553cf014dcabac7953585"
 
         def install
           bin.install "verscout"
