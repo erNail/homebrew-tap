@@ -6,21 +6,21 @@ class Verscout < Formula
   desc "Find the latest version tag, calculate the next version, print to STDOUT - no tagging, no bumping, no changelog, no publishing.
 "
   homepage "https://github.com/erNail/verscout"
-  version "1.3.2"
+  version "1.4.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/erNail/verscout/releases/download/1.3.2/verscout_1.3.2_darwin_amd64.tar.gz"
-      sha256 "9c0ea4c4ac793b8552ac7aa25c5ec20c96f69df39d243497ca2f9cce77d719bf"
+      url "https://github.com/erNail/verscout/releases/download/1.4.0/verscout_1.4.0_darwin_amd64.tar.gz"
+      sha256 "23ea149cc573ed14b2f5c84eaa680d9a799e50f5fbd059988fbe9c1e0f9805fd"
 
       def install
         bin.install "verscout"
       end
     end
     on_arm do
-      url "https://github.com/erNail/verscout/releases/download/1.3.2/verscout_1.3.2_darwin_arm64.tar.gz"
-      sha256 "1690e069047ee89aa73ae306a4613b8a2d17ff8722411e152968394aba9b6267"
+      url "https://github.com/erNail/verscout/releases/download/1.4.0/verscout_1.4.0_darwin_arm64.tar.gz"
+      sha256 "84b48041008c6e6c89a8254a98c149bab9968bfbb8926e3d173ffd634f6569db"
 
       def install
         bin.install "verscout"
@@ -31,8 +31,8 @@ class Verscout < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/erNail/verscout/releases/download/1.3.2/verscout_1.3.2_linux_amd64.tar.gz"
-        sha256 "159da3297ad1f17a037c575760592bc5b16decd7c4feb4c1a165d54019867286"
+        url "https://github.com/erNail/verscout/releases/download/1.4.0/verscout_1.4.0_linux_amd64.tar.gz"
+        sha256 "67f589d44f2f55bb760ce1222addb9251a07fa827e15f6af6a82e38482c0c1ee"
 
         def install
           bin.install "verscout"
@@ -41,8 +41,8 @@ class Verscout < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/erNail/verscout/releases/download/1.3.2/verscout_1.3.2_linux_arm64.tar.gz"
-        sha256 "e261758c60105a9f4366ca298882033b046da762c28857077565033c6078cfa9"
+        url "https://github.com/erNail/verscout/releases/download/1.4.0/verscout_1.4.0_linux_arm64.tar.gz"
+        sha256 "25d39a1e419f4835d413ed32e3247ea8ac8a9e0ecf113bbcd661d5894e360e78"
 
         def install
           bin.install "verscout"
