@@ -11,16 +11,16 @@ class Verscout < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/erNail/verscout/releases/download/2.0.0/verscout_2.0.0_darwin_amd64.tar.gz"
-      sha256 "150bcad38c269f0d0e94515f6acefa08bc39e0a037eb78c32efcdf9bc6d08961"
+      url "https://github.com/erNail/verscout/releases/download/2.0.1/verscout_2.0.1_darwin_amd64.tar.gz"
+      sha256 "2a5d4cfbefd628221996169ceb9358684463f997d49112b9dda952bd36cf9958"
 
       def install
         bin.install "verscout"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/erNail/verscout/releases/download/2.0.0/verscout_2.0.0_darwin_arm64.tar.gz"
-      sha256 "3d9b9627f768550477f547fabea59b308f0c3a3ccb0afd5c460fbe49864ddeeb"
+      url "https://github.com/erNail/verscout/releases/download/2.0.1/verscout_2.0.1_darwin_arm64.tar.gz"
+      sha256 "f9b994f2a064b75b6c42b04f38f2379d874c04160c42ba009d7271f6da499cb1"
 
       def install
         bin.install "verscout"
@@ -30,15 +30,15 @@ class Verscout < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/erNail/verscout/releases/download/2.0.0/verscout_2.0.0_linux_amd64.tar.gz"
-      sha256 "0b9a7e415cb1b30184550a513b75fdedb72175af9172911ea1349b192a9182ce"
+      url "https://github.com/erNail/verscout/releases/download/2.0.1/verscout_2.0.1_linux_amd64.tar.gz"
+      sha256 "04e9c8597faf50767dcdc222ed9071dd2dedb43ef2ad44a5d4f26614174f3f10"
       def install
         bin.install "verscout"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/erNail/verscout/releases/download/2.0.0/verscout_2.0.0_linux_arm64.tar.gz"
-      sha256 "6a2f4ebdf0ccc20d5dccb761a5e5e88f615b08c1c9fef9afb1044c44f0f6f653"
+      url "https://github.com/erNail/verscout/releases/download/2.0.1/verscout_2.0.1_linux_arm64.tar.gz"
+      sha256 "e0b6dc061bd776452394308faa52a35cd520bd020185b558d7a9c7c451332e5e"
       def install
         bin.install "verscout"
       end
