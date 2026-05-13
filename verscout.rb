@@ -6,7 +6,7 @@ class Verscout < Formula
   desc "Find the latest version tag, calculate the next version, print to STDOUT - no tagging, no bumping, no changelog, no publishing.
 "
   homepage "https://github.com/erNail/verscout"
-  version "2.0.0"
+  version "2.1.0"
   license "MIT"
 
   on_macos do
