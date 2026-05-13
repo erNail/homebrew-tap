@@ -11,16 +11,16 @@ class Verscout < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/erNail/verscout/releases/download/2.0.1/verscout_2.0.1_darwin_amd64.tar.gz"
-      sha256 "2a5d4cfbefd628221996169ceb9358684463f997d49112b9dda952bd36cf9958"
+      url "https://github.com/erNail/verscout/releases/download/2.1.0/verscout_2.1.0_darwin_amd64.tar.gz"
+      sha256 "861b1fce8e30b2593e3ceb4ee5a458e897972b0fe05674093c56c63841fb0fbe"
 
       def install
         bin.install "verscout"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/erNail/verscout/releases/download/2.0.1/verscout_2.0.1_darwin_arm64.tar.gz"
-      sha256 "f9b994f2a064b75b6c42b04f38f2379d874c04160c42ba009d7271f6da499cb1"
+      url "https://github.com/erNail/verscout/releases/download/2.1.0/verscout_2.1.0_darwin_arm64.tar.gz"
+      sha256 "bd2ff2e79f8372d26557c3c895b8821834c5ef0b4702633dfe52f89a5ec24566"
 
       def install
         bin.install "verscout"
@@ -30,16 +30,16 @@ class Verscout < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/erNail/verscout/releases/download/2.0.1/verscout_2.0.1_linux_amd64.tar.gz"
-      sha256 "04e9c8597faf50767dcdc222ed9071dd2dedb43ef2ad44a5d4f26614174f3f10"
-      def install
+      url "https://github.com/erNail/verscout/releases/download/2.1.0/verscout_2.1.0_linux_amd64.tar.gz"
+      sha256 "1052b50213cd80dbdd56229a40f31cbde5ed568a8e29b91578867282c01eec81"
+      define_method(:install) do
         bin.install "verscout"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/erNail/verscout/releases/download/2.0.1/verscout_2.0.1_linux_arm64.tar.gz"
-      sha256 "e0b6dc061bd776452394308faa52a35cd520bd020185b558d7a9c7c451332e5e"
-      def install
+      url "https://github.com/erNail/verscout/releases/download/2.1.0/verscout_2.1.0_linux_arm64.tar.gz"
+      sha256 "66c91b6c56e1fd750fdfc8aa175a5322e433cf4fb915ecd3c5f7cb6555898699"
+      define_method(:install) do
         bin.install "verscout"
       end
     end
